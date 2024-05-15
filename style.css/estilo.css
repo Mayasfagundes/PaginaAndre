@@ -1,0 +1,53 @@
+@import url(./reset.css);
+@import url(./cabecalho.css);
+@import url(./home.css);
+@import url(./sobre.css);
+@import url(./especialidades.css);
+@import url(./contato.css);
+
+
+
+:root {
+    --branco: #ffffff;
+    --azul-escuro: #304464;
+    --azul-claro: #BDBDBD;
+    --cinza:#f0ecec;
+    --preto: #000000;
+    --fonte-principal: 'Inter', sans-serif;
+    --fonte-secundaria: 'Poetsen One', cursive;
+
+    
+  
+  }
+  
+  body {
+    background-color: var(--cinza);
+    color: var(--preto);
+  
+  
+  }
+
+  h1{
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--azul-escuro);
+    font-size: 40px;
+    font-family: var(--fonte-secundaria);
+  }
+
+
+  .whatsapp-link {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 20px; /* Distância da direita da página */
+    z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
+  }
+  
+  .whatsapp-link svg {
+    width: 30px; /* Largura desejada */
+    height: 30px; /* Altura desejada */
+    color: var(--branco);
+    background-color: #24d464;
+    padding: 1rem  ;
+    border-radius: 1rem;
+  }

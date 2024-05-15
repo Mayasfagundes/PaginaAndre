@@ -1,0 +1,79 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cinza);
+}
+
+.home__conteudo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 10rem;
+}
+
+.home__conteudo-profissao {
+  color: var(--azul-escuro);
+  font-family: "Nunito";
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.home__conteudo-titulo {
+  font-family: "Playfair";
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--azul-escuro);
+}
+
+.home__conteudo-texto {
+  padding: 1rem 8rem;
+  color: var(--preto);
+  font-size: 20px;
+  text-align: justify;
+}
+
+.icones__home-itens {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icones__home-link {
+  margin: 1.5rem;
+  padding-top: 1rem;
+}
+
+.home-link, .home-link-secundario {
+  text-decoration: none;
+  color: var(--preto);
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.home-link {
+  background-color: var(--branco);
+  border: 2px solid var(--azul-escuro);
+}
+
+.home-link-secundario {
+  background-color: var(--azul-escuro);
+  border: 2px solid var(--lilas);
+  color: var(--branco);
+}
+
+.home__foto-principal {
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 1rem;
+  justify-self: end;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
