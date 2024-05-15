@@ -1,0 +1,41 @@
+.interface {
+    display: flex;
+    justify-content: space-between;
+     
+  }
+  
+  .cabecalho {
+    opacity: .8;
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    padding: 1.5rem;
+    border-bottom: 1px solid;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cabecalho__icones {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .icones__cabecalho {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cabecalho-link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 700;
+    padding: 1rem;
+  }
+  
