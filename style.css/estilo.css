@@ -44,10 +44,10 @@
   }
   
   .whatsapp-link svg {
-    width: 30px; /* Largura desejada */
-    height: 30px; /* Altura desejada */
+    width: 40px; /* Largura desejada */
+    height: 40px; /* Altura desejada */
     color: var(--branco);
     background-color: #24d464;
-    padding: 1rem  ;
-    border-radius: 1rem;
+    border-radius: 4rem;
+    padding: 0.6rem;
   }

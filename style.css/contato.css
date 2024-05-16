@@ -1,8 +1,57 @@
+.contato__container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaebeb;
+    background-image: url(../img/brooke-lark-08bOYnH_r_E-unsplash\ 1.png) ;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.contato__redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.contato__redes-titulo{
+    color: var(--azul-escuro);
+    font-family: var(--fonte-secundaria);
+    font-size: 30px;
+    margin-right: 5rem;
+
+}
+
+.contato__redes-subtitulo{
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
+    padding-right: 1rem;
+    width: 230px;
+    text-align: end;
+    margin-right: 5rem;
+
+
+}
+
+.contato__redes-texto{
+    margin-top: 2rem;
+    margin-right: 5rem;
+    font-size: 20px;
+
+}
+
 .contato__endereco{
     background-color: var(--branco);
     width: 350px;
     height: 400px;
-    margin: 1rem;
+    margin: 1rem 5rem;
     padding: 2rem 1rem;
     text-align: center;
     border-radius: 1rem;
