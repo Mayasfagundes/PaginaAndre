@@ -1,79 +1,133 @@
-.home {
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--cinza);
+.home{
+  padding-top: 7rem;
+    background-color: var(--preto);
+    width: 100%;
+    height: 100vh; 
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+
 }
 
 .home__conteudo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.home__conteudo-titulo{
+    color: var(--branco);
+    font-size: 45px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.home__conteudo-profissao{
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.home__conteudo-texto{
+    color: var(--branco);
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    
+}
+
+
+.home__fotos-itens {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-right: 2rem;
+}
+
+
+
+.home__foto {
+ 
+  width: 200px;
+  height: 230px;
+  object-fit: cover; /* Isso garante que a foto cubra completamente o espaço disponível */
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+  
+  
+  
+  @media only screen and (max-width: 768px) {
+
+    .home{
+      
+      width: 100%;
+      height: 60vh; 
+  }
+.home__conteudo{
+  width: 55%;
+  margin-top: 2rem;
+   }
+  
+.home__conteudo-profissao{
+  padding-top: 4rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.home__conteudo-texto{
+  font-size: 15px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-top: 10rem;
-}
-
-.home__conteudo-profissao {
-  color: var(--azul-escuro);
-  font-family: "Nunito";
-  font-size: 20px;
-  padding-bottom: 1rem;
-}
-
-.home__conteudo-titulo {
-  font-family: "Playfair";
-  font-size: 40px;
-  font-weight: 700;
-  color: var(--azul-escuro);
-}
-
-.home__conteudo-texto {
-  padding: 1rem 8rem;
-  color: var(--preto);
-  font-size: 20px;
-  text-align: justify;
-}
-
-.icones__home-itens {
-  text-align: center;
-  margin: 1rem;
-  display: flex;
+  align-items: center;
   justify-content: center;
+  padding:  1rem;
+  margin: 0;
+
+  
 }
 
-.icones__home-link {
-  margin: 1.5rem;
-  padding-top: 1rem;
-}
-
-.home-link, .home-link-secundario {
-  text-decoration: none;
-  color: var(--preto);
-  padding: 0.8rem;
-  border-radius: 5px;
+.home__conteudo-titulo{
+  font-size: 25px;
   font-weight: bold;
+  margin:  0;
+  padding-bottom: 0.5rem;
+
 }
 
-.home-link {
-  background-color: var(--branco);
-  border: 2px solid var(--azul-escuro);
+
+.container__botao{
+  display: block;
 }
 
-.home-link-secundario {
-  background-color: var(--azul-escuro);
-  border: 2px solid var(--lilas);
-  color: var(--branco);
+
+
+
+
+  }
+
+
+  @media only screen and (max-width: 480px) {
+
+    .home{
+      background-size: cover;
+    }
+
+.container__botao{
+  font-size: 12px;
 }
 
-.home__foto-principal {
-  width: 500px;
-  height: 450px;
-  object-fit: cover;
-  border-radius: 1rem;
-  justify-self: end;
-  margin-right: 2rem;
-  margin-top: 5rem;
-}
+.home__conteudo{
+  width: 70%;
+  margin-top: 2rem;
+   }
+
+   .home__conteudo-texto{
+    line-height: 1.3rem;
+    padding:  0.5rem 0;
+    margin-left: .2rem;
+
+   }
+
+  }
