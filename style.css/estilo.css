@@ -4,50 +4,75 @@
 @import url(./sobre.css);
 @import url(./especialidades.css);
 @import url(./contato.css);
+@import url(./rodape.css);
 
 
 
 :root {
     --branco: #ffffff;
-    --azul-escuro: #304464;
-    --azul-claro: #BDBDBD;
-    --cinza:#f0ecec;
+    --cinza-claro: #BDBDBD;
+    --cinza:#545c5c;
     --preto: #000000;
     --fonte-principal: 'Inter', sans-serif;
     --fonte-secundaria: 'Poetsen One', cursive;
-
-    
-  
+    --verde-claro: #90b676    ;
   }
   
   body {
-    background-color: var(--cinza);
+    background-color: var(--branco);
     color: var(--preto);
   
   
   }
 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
   h1{
     text-align: center;
     padding-top: 1rem;
-    color: var(--azul-escuro);
+    color: var(--verde-claro);
     font-size: 40px;
-    font-family: var(--fonte-secundaria);
   }
+
+  
+  .botao__consulta {
+    padding: 1rem;
+    color: aliceblue;
+    background-color: var(--verde-claro);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none; /* Para remover o sublinhado dos links */
+    display: inline-block; /* Para que funcione tanto em <a> quanto em <button> */
+}
+
 
 
   .whatsapp-link {
     position: fixed;
-    bottom: 20px; /* Distância do fundo da página */
+    bottom: 50px; /* Distância do fundo da página */
     right: 20px; /* Distância da direita da página */
     z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
   }
   
   .whatsapp-link svg {
-    width: 40px; /* Largura desejada */
-    height: 40px; /* Altura desejada */
+    width: 50px; /* Largura desejada */
+    height: 50px; /* Altura desejada */
     color: var(--branco);
     background-color: #24d464;
-    border-radius: 4rem;
-    padding: 0.6rem;
+    border-radius: 8rem;
   }
+
+  [data-anime] {
+    opacity: 0; /* Inicia o elemento invisível */
+    transition: opacity 0.8s ease; /* Adiciona uma transição suave para a propriedade opacity */
+  }
+  
+  [data-anime].animate {
+    opacity: 1; /* Define a opacidade para 1 para tornar o elemento visível */
+  }
+  

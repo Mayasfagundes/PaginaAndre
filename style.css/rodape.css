@@ -1,0 +1,57 @@
+.rodape {
+  border-top: 1px solid var(--preto);
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 1rem; 
+}
+
+
+.contato__endereco {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: left;
+  padding: 2rem;
+  text-align:left;
+}
+
+.contato__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 0 2rem;
+  padding-left: 10rem;
+}
+
+.contato__endereco-localizacao {
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.contato__endereco-localizacao span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+iframe {
+  border: 0;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+}
+
+.rodape__texto {
+  text-align: center;
+  border-top: 1px solid var(--branco);
+  padding-top: 0.5rem;
+}
+
+.rodape__icones {
+  display: flex;
+  align-items: center; }
+
+.rodape__icones-svg {
+  color: var(--lilas);
+  margin-left: 0.5rem; }

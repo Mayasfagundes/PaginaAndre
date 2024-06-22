@@ -1,81 +1,43 @@
-.especialidades {
-    background-color: var(--azul-claro);
-    height: 100vh;
-    width: 100%;
-    border-radius: 5rem 5rem 0 0 ; 
-    /*overflow: hidden;  Garantindo que o conteúdo dentro da seção não ultrapasse os cantos arredondados */
-}
 
-.especialidades__conteudo{
+.especialidades__container{
     display: flex;
     flex-direction: row;
+    font-size: 18px;
 }
 
-.especialidades__conteudo-container{
+.especialidades__container-itens{
   display: flex;
   flex-direction: column;
   justify-content: right;
   align-items: center;
   text-align: right;
-  margin: 3rem;
-  padding-bottom: 3rem;
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 1rem;
-  width: 350px;
-  height: 380px;
-}
-
-.especialidades__titulo-container{
-    margin: 2rem 1rem 1rem;
-    color: var(--azul-escuro);
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.especialidades__imagem{
-    width: 180px;
-    height: 180px;
+  border: 2px solid var(--verde-claro);
     margin: 1rem;
-    border-radius: 8em;
+    border-radius: 0.5rem;
+    width: 500px;
+    color: var(--preto);
 }
 
 .especialidades__texto-container{
-    margin: 1rem 4rem;
-    text-align: center;
-}
-
-.especialidades__especificacoes{
-    background-color: var(--azul-escuro);
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-
-.especialidades__especificacoes-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: center;
-  text-align: right;
-  margin: 3rem;
-  padding-bottom: 3rem;
-  color: var(--branco);
+    margin: 2rem;
+    text-align: justify;
 
 }
+
 
 .especialidades__especificacoes-imagem{
-    width: 100px;
-    height: 100px;
-    margin: 1rem;
-
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem;
 }
 
 .especialidades__especificacoes-titulo{
-    font-size: 15px;
-    font-family: var( --fonte-secundaria);
+    font-size: 18px;
+    font-weight: bolder;
 }
 
-.especialidades__texto-container{
-    margin-top: 2rem;
+
+
+.sobre__container .container__botao{
+    text-align: center;
 }
