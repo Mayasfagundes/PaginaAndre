@@ -11,16 +11,16 @@
   justify-content: right;
   align-items: center;
   text-align: right;
-  background-color: var(--verde-claro);
+  border: 2px solid var(--verde-claro);
     margin: 1rem;
     border-radius: 0.5rem;
     width: 500px;
+    color: var(--preto);
 }
 
 .especialidades__texto-container{
     margin: 2rem;
     text-align: justify;
-    color: aliceblue;
 
 }
 
@@ -33,7 +33,6 @@
 
 .especialidades__especificacoes-titulo{
     font-size: 18px;
-    color: aliceblue;
     font-weight: bolder;
 }
 
